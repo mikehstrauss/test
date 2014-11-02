@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.citytechinc</groupId>
+	<artifactId>mike</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Mike's test CQ5 project CQ5 Website</name>
+
+	<parent>
+		<groupId>com.citytechinc.cq.library</groupId>
+		<artifactId>cq-library</artifactId>
+		<version>5.0.2</version>
+	</parent>
+
+	<modules>
+		<module>mike-core</module>
+		<module>mike-ui</module>
+	</modules>
+
+	<properties>
+		<cq-library-version>5.0.2</cq-library-version>
+		<core.name>mike-core</core.name>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss.SSSZ</maven.build.timestamp.format>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.junit.usefile>false</maven.junit.usefile>
+		<skip-publish>true</skip-publish>
+
+		<m2e.plugin.version>1.0.0</m2e.plugin.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<skip>true</skip>
+				<sling.user>admin</sling.user>
+			</properties>
+		</profile>
+		<profile>
+			<id>local-author</id>
+			<activation>
+				<property>
+					<name>local-author</name>
+				</property>
+			</activation>
+			<properties>
+				<skip>false</skip>
+				<sling.host>localhost</sling.host>
+				<sling.port>4502</sling.port>
+				<sling.user>admin</sling.user>
+				<sling.password>admin</sling.password>
+			</properties>
+		</profile>
+		<profile>
+			<id>deploy-publish</id>
+			<activation>
+				<property>
+					<name>deploy-publish</name>
+				</property>
+			</activation>
+			<properties>
+				<skip-publish>false</skip-publish>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<configuration>
+					<generateBackupPoms>false</generateBackupPoms>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>citytech-public</id>
+			<url>http://nexus.citytech.ctmsp.com/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>citytech-private</id>
+			<url>http://nexus.citytech.ctmsp.com/content/groups/CITYTECH-Private/</url>
+		</repository>
+	</repositories>
+</project>

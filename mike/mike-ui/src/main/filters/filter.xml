@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/mike/components" />
+    <filter root="/apps/mike/templates" />
+    <filter root="/apps/mike/install/${core.name}-${project.parent.version}.jar" />
+    <filter root="/etc/designs/mike">
+        <exclude pattern="/etc/designs/mike/jcr:content(/.*)?"/>
+    </filter>
+</workspaceFilter>

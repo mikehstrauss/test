@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/mike" />
+    <filter root="/etc/designs/mike">
+        <exclude pattern="/etc/designs/mike/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/etc/packages/cq-library/cq-library-ui-${cq-library-version}.zip" />
+</workspaceFilter>
