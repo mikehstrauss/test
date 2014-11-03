@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a6b29fe_1488701e",
+        "filename": "mike/mike-ui/src/main/content/jcr_root/apps/mike/components/content/testComponent/testComponent.jsp",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1002780
+      },
+      "writtenOn": "2014-11-03T22:26:56Z",
+      "side": 1,
+      "message": "Nice name",
+      "revId": "1fa9b83237505c2ca09636cfd81f5eb108bae3d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
