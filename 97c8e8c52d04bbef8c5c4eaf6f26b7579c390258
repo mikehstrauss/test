@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a6b29fe_8900e9ab",
+        "filename": "mike/mike-ui/src/main/content/jcr_root/apps/mike/components/content/testComponent/testComponent.jsp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1002780
+      },
+      "writtenOn": "2014-11-03T02:57:18Z",
+      "side": 1,
+      "message": "I don\u0027t like the name msg2.",
+      "range": {
+        "startLine": 6,
+        "startChar": 2,
+        "endLine": 6,
+        "endChar": 6
+      },
+      "revId": "97c8e8c52d04bbef8c5c4eaf6f26b7579c390258",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
