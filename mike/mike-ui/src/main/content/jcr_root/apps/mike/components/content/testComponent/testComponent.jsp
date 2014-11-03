@@ -4,3 +4,4 @@
 
 ${test.title}
 ${test.msg1}
+${test.msg2}
